@@ -1,0 +1,39 @@
+version: "3.1"
+
+stories:
+  - story: Cac loai phao hoa
+    steps:
+      - intent: cac_loai_phao_hoa
+      - action: action_search_product
+
+  - story: Hoi gia phao hoa
+    steps:
+      - intent: check_price
+        entities:
+          - name: "giàn phun hoa"
+      - slot_was_set:
+          - name: "giàn phun hoa"
+      - action: action_check_price
+      - intent: thankyou
+      - action: utter_thankyou
+
+  - story: Tim kiem loai ban nhieu nhat
+    steps:
+      - intent: cac_loai_phao_hoa
+      - action: action_search_product
+      - intent: loai_ban_nhieu_nhat
+      - action: utter_loai_ban_nhieu_nhat
+
+  - story: Tim kiem loai re nhat
+    steps:
+      - intent: cac_loai_phao_hoa
+      - action: action_search_product
+      - intent: loai_nao_re_nhat
+      - action: utter_loai_nao_re_nhat
+
+  - story: Tim kiem loai dat nhat
+    steps:
+      - intent: cac_loai_phao_hoa
+      - action: action_search_product
+      - intent: loai_nao_dat_nhat
+      - action: utter_loai_nao_dat_nhat

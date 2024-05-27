@@ -1,0 +1,820 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    -hey
+    -hello
+    -hi
+    -chào
+    -xin chào
+    -chào bot
+    -có ai ở đó không
+    -tôi cần hỗ trợ
+    -chào bạn
+    -chào anh
+    -chào chị
+    -chào buổi sáng
+    -có đó không
+    -rãnh không
+    -cho mình hỏi với
+    -cho tôi hỏi
+    -ê
+    -hú
+    -chào em
+    -em ơi, cho anh hỏi
+    -bot ơi
+    -cho mình hỏi chút
+- intent: loai_ban_nhieu_nhat
+  examples: |
+    -loại nào bán được nhiều nhất
+    -loại nào bán chạy nhất
+    -bán chạy nhất
+    -bán nhiều nhất
+    -bán được nhiều nhất
+    -bán được chạy nhất
+    -thế loại nào bán chạy nhất
+    -loại nào đang được mua nhiều nhất
+    -loại nào nhiều người mua nhất
+    -mua nhiều nhất
+    -được mua nhiều nhất
+    -cái nào bán chạy
+- intent: loai_nao_dep_nhat
+  examples: |
+    -loại nào đẹp nhất
+    -sản phẩm nào đẹp nhất
+    -pháo nào đẹp nhất
+    -đẹp nhất là loại nào
+    -đẹp nhât
+    -pháo hoa nào đẹp nhất
+- intent: loai_nao_re_nhat
+  examples: |
+    -loại nào rẻ nhất
+    -sản phẩm nào rẻ nhất
+    -pháo nào rẻ nhất
+    -rẻ nhất là loại nào
+    -rẻ nhât
+    -pháo hoa nào rẻ nhất
+- intent: loai_nao_dat_nhat
+  examples: |
+    -loại nào đắt nhất
+    -sản phẩm nào đắt nhất
+    -pháo nào đắt nhất
+    -đắt nhất là loại nào
+    -đắt nhât
+    -pháo hoa nào đắt  nhất
+- intent: dong_y
+  examples: |
+    -đúng rồi
+    -đúng rồi đấy
+    -đúng vậy
+    -ừ
+    -ừ đúng rồi
+    -ừ chuẩn
+    -chuẩn
+    -chuẩn rồi
+    -chuẩn đấy
+    -đúng rồi đó
+    -ừ đúng
+    -chính xác
+    -ừ
+    -oke
+    -ok
+    -okay
+    -được
+    -duyệt
+- intent: goodbye
+  examples: |
+    -bye
+    -goodbye
+    -g9
+    -good night
+    -bye bye
+    -tạm biệt
+    -hẹn gặp lại
+    -ngủ ngon
+    -chúc ngủ ngon
+    -nói chuyện sau nhé
+    -tôi sẽ liên hệ sau
+    -tạm biệt em
+    -tạm biệt bot nhá
+    -biến
+- intent: ask_ability
+  examples: |
+    -em có thể làm những gì nhỉ
+    -em có chức năng gì?
+    -em giúp gì được anh không?
+    -em có thể giúp gì cho anh?
+    -em biết làm gì?
+    -em hỗ trợ anh như thế nào?
+    -cho anh xem các chức năng của em
+    -tôi cần hỗ trợ
+    -hỗ trợ tôi với
+    -cho hỏi với
+    -tôi cần trợ giúp
+- intent: thankyou
+  examples: |
+    -cảm ơn em nhá
+    -thanks em nha
+    -cảm ơn nha
+    -good job
+    -thank you
+    -cảm ơn bot nha
+    -thanks bot
+    -cảm ơn
+    -thank you so much
+    -great! thanks
+    -xin cảm ơn
+    -cảm ơn nhiều
+- intent: praise
+  examples: |
+    -bot giỏi quá
+    -great
+    -awsome
+    -bot làm tốt lắm
+    -ui giỏi thế
+    -bot thông minh
+    -đẹp trai đấy
+    -em đẹp lắm
+    -tốt
+    -giỏi
+    -quá ok
+- intent: tu_choi
+  examples: |
+    -thôi
+    -không
+    -không được
+    -chịu
+    -thôi nhé
+    -không được đâu
+    -không được nhé
+- intent: decry
+  examples: |
+    -quá tệ
+    -ngu ngốc
+    -chả biết gì cả
+    -ngu thật
+    -dở ghê
+    -có thế mà cũng không biết
+    -kém cói
+    -không đúng
+    -sai rồi
+    -điều đó không chính xác
+
+- intent: howto
+  examples: |
+    -làm thế nào để mua giàn phun viên
+    -tôi cần thực hiện bước gì để mua giàn phun viên
+    -bạn có thể hướng dẫn tôi cách mua giàn phun viên không
+    -làm sao để đặt mua giàn phun viên
+    -tôi muốn biết quy trình mua giàn phun viên là gì
+    -có bước nào tôi cần làm để mua giàn phun viên không
+    -bạn có thể giải thích cách đặt mua  không
+    -tôi muốn biết làm thế nào để mua  từ cửa hàng.
+    -có bước nào tôi cần theo dõi khi muốn mua  không
+    -bạn có thể chỉ cho tôi cách mua  trực tuyến không
+    -làm thế nào để tôi có thể mua  dễ dàng nhất
+    -có hướng dẫn gì để tôi mua  không
+    -tôi cần làm gì để đặt mua
+    -bạn có thể giúp tôi với quy trình mua  được không
+    -Làm sao để mua hàng vậy
+    -làm sao để mua
+    -mua như nào vậy
+    -Làm gì để mua được hàng
+    -Mua hàng kiểu gì
+    -Mua bằng cách nào
+    -cách mua hàng
+    -cần những thủ tục nào để mua được pháo hoa thành công
+    -có đặt hàng online được không
+    -có thể mua được mấy  mỗi loại
+    -mua pháo hoa có khó không
+    -mua được tối đa bao nhiêu lượng pháo
+    -mua số lượng lớn được không
+    -muốn mua không phải xếp hàng thì phải làm sao
+    -muốn mua sỉ thì làm thế nào
+    -muốn mua thì phải làm sao
+- intent: dia_chi_cua_hang
+  examples: |
+    -cửa hàng nào ở gần  nhất
+    -pháo hoa mua ở đâu
+    -các cửa hàng bán pháo hoa của nhà máy
+    -chỉ cho tôi chỗ mua hàng nhé
+    -chỗ nào có bán pháo hoa của bộ quốc phòng
+    -có các đại lý phân phối ở các tỉnh lẻ không
+    -có chỗ nào quanh khu vực  cung cấp pháo hoa không
+    -có cửa hàng ở khu  không
+    -có thể mua pháo hoa tết ở đâu
+    -cửa hàng bán pháo hoa ở
+    -cửa hàng ở đâu
+    -danh sách đại lý bán pháo hoa chính hãng
+    -hiện pháo này đang bán lẻ tại những địa chỉ nào , có dễ mua không
+    -mua pháo hoa ở
+    -mua pháo hoa sỉ lẻ  ở đâu
+    -mua bán pháo hoa chơi tết ở đâu
+    -mua bán pháo hoa số lượng lớn ở đâu
+    -mua cái này ở đâu
+    -ở  muốn mua pháo hoa có được không
+    -ở  có chỗ nào bán pháo hoa không
+    -ở  có các đại lý nào được phép bán pháo hoa của bộ quốc phòng
+    -shop pháo hoa giá rẻ ở
+    -tìm cửa hàng quanh khu
+    -tôi có thể mua hàng trực tiếp ở đâu
+    -tôi muốn mua pháo hoa ở
+    -chỗ nào bán vậy
+    -tôi muốn mua nhưng chưa biết cửa hàng nào gần
+    -có cửa hàng nào gần tôi không
+    -gần tôi có cửa hàng nào không
+    -địa chỉ mua ở đâu vậy
+    -mua ở đâu thế
+    -chỗ nào bán vậy
+    -xung quanh đây có chỗ nào bán không
+    -có bán không
+    -có bán pháo hoa không
+    -xung quanh đây có bán pháo hoa không
+    -chỗ nào bán pháo hoa vậy
+    -địa chỉ bán pháo hoa
+    -gần đây có chỗ nào bán pháo hoa
+    -có bán pháo không
+    -xung quanh đây có bán pháo không
+    -chỗ nào bán pháo vậy
+    -địa chỉ bán pháo
+    -gần đây có chỗ nào bán pháo
+    -cửa hàng ở đâu
+    -mua pháo ở đâu
+    -mua pháo hoa ở đâu
+    -địa chỉ cửa hàng ở đâu
+    -địa chỉ cửa hàng bán pháo hoa ở đâu
+    -mua pháo ở đâu
+    -mua pháo hoa ở đâu
+    -bán pháo ở đâu
+    -vị trí cửa hàng bán pháo ở đâu
+    -vị trí cửa hàng bán pháo hoa ở đâu
+    -vị trí cửa hàng ở đâu
+    -tôi có thể mua pháo ở đâu
+    -tôi có thể mua pháo hoa ở đâu
+    -ở đâu có bán pháo
+    -ở đâu có bán pháo hoa
+    -có chỗ nào bán pháo không
+    -có chỗ nào bán pháo hoa không
+    -cửa hàng bán pháo ở đâu
+    -cửa hàng bán pháo hoa ở đâu
+- intent: anh_huong_co_the
+  examples: |
+    -pháo hoa có gây ảnh hường đến mắt trẻ em và người lớn không
+    -hít lượng khói pháo hoa có bị ảnh hưởng gì không
+    -khí đốt pháo hoa có gây ra chất độc hại không
+    -tàn pháo hoa khi đốt xong có gây ảnh hưởng không
+    -nghe tiếng pháo hoa nhiều có bị ảnh hưởng đến tai không
+    -sử dụng nhiều pháo hoa có tác hại gì đến cơ thể không
+    -có gây ảnh hướng không
+    -có ảnh hưởng cơ thể không
+    -có hải sức khoẻ khôn
+    -có độc không
+    -tác hại như thế nào
+    -người bị bệnh tim có nên ngắm pháo hoa không
+    -sử dụng pháo hoa có gì nguy hiểm đến sức khỏe không
+    -các thành phần có trong khói pháo hoa sau khi đốt gây ảnh hưởng đến cơ thể như thế nào
+    -pháo hoa có gây ảnh hướng không
+    -pháo hoa có ảnh hưởng cơ thể không
+    -pháo hoa có hải sức khoẻ khôn
+    -pháo hoa có độc không
+    -pháo tác hại như thế nào
+    -pháo có gây ảnh hướng không
+    -pháo có ảnh hưởng cơ thể không
+    -pháo có hải sức khoẻ khôn
+    -pháo có độc không
+    -pháo tác hại như thế nào
+- intent: anh_huong_tre_nho
+  examples: |
+    -có an toàn khi trẻ nhỏ sử dụng sản phẩm này không
+    -đốt pháo có ảnh hưởng đến trẻ nhỏ không
+    -sản phẩm có gây ra khí độc hại đối với trẻ nhỏ không
+    -trẻ nhỏ ngậm pháo hoa có sao không
+    -trẻ nhỏ cắn pháo hoa có sao không
+    -tiếng pháo hoa có gây ảnh hưởng đến tai của trẻ em không
+    -trẻ em có nên xem pháo hoa thường xuyên không
+    -trẻ em có nên chơi pháo hoa không
+    -tác hại của pháo hoa đến sức khỏe của trẻ nhỏ
+    -tác hại khi xem pháo hoa nhiều đến sức khỏe của trẻ em
+    -có an toàn khi trẻ em sử dụng sản phẩm này không
+    -đốt pháo có ảnh hưởng đến trẻ em không
+    -sản phẩm có gây ra khí độc hại đối với trẻ em không
+    -trẻ em ngậm pháo hoa có sao không
+    -trẻ em cắn pháo hoa có sao không
+    -tiếng pháo hoa có gây ảnh hưởng đến tai của trẻ em không
+    -trẻ em có nên xem pháo hoa thường xuyên không
+    -trẻ em có nên chơi pháo hoa không
+    -tác hại của pháo hoa đến sức khỏe của trẻ nhỏ
+    -tác hại khi xem pháo hoa nhiều đến sức khỏe của trẻ em
+- intent: bao_bi_san_pham
+  examples: |
+    -bao bì có cảnh báo về độ nguy hiểm của pháo hoa không
+    -bao bì có hướng dẫn sử dụng không
+    -trên bao bì có những thông tin gì
+    -thành phần của pháo hoa có được ghi trên bao bì không
+    -có ngày sản xuất trên bao bì không
+    -có hạn sử dụng trên bao bì không
+    -bao bì sản phẩm có gì đặc biệt
+    -trên bao bì có thông tin ngày sản xuất không
+    -trên bao bì có thông tin hạn sử dụng không
+    -có những thông tin gì trên bao bì sản phẩm
+    -bao bì
+    -bao bì sản phẩm
+    -sản phẩm bao bì
+- intent: bao_dam_an_toan
+  examples: |
+    -pháo hoa này có an toàn không
+    -có bảo hiểm nếu bị tai nạn khi sử dụng không
+    -có cần lưu ý gì khi bắn các loại pháo hoa này không
+    -đốt pháo hoa như thế nào cho an toàn
+    -đốt pháo bộ quốc phòng chẳng may bị thương tích thì có được bảo hiểm không
+    -đốt pháo có bảo hiểm không
+    -đốt pháo có cháy nhà không
+    -đốt pháo có gây ra cháy nổ cao không
+    -đốt pháo mà chẳng may gây hỏa hoạn thì trách nhiệm thuộc về ai
+    -khói từ pháo hoa có hại không
+    -sản phẩm có nguy hiểm không
+    -có an toàn không
+- intent: cac_loai_phao_hoa
+  examples: |
+    -pháo gồm bao nhiêu loại và gồm những loại nào
+    -có bao nhiêu loại pháo hoa
+    -là những loại nào
+    -thế có loại nào
+    -có những loại nào vậy
+    -có những loại nào
+    -có những loại gì
+    -gồm những loại nào
+    -Bạn bán pháo hoa nào
+    -Bạn bán những loại gì
+    -bán những loại nào vậy
+    -cho tôi hỏi có những loại nào
+    -cho tôi hỏi có bao nhiêu loại
+    -cho tôi hỏi có pháo gì đấy
+    -những loại nào thế
+    -có những gì vậy
+    -tôi có thể mua đc những loại pháo hoa nào
+    -có những loại pháo hoa nào
+    -các loại pháo hoa hay được sử dụng
+    -loại pháo hoa bán chạy nhất
+    -pháo hoa được mua nhiều nhất
+    -các loại pháo hoa được sử dụng nhiều trong dịp tết
+- intent: chinh_sach_mua_ban
+  examples: |
+    -được mua tối đa bao nhiêu hộp
+    -tôi được mua số lượng lớn không
+    -có thể mua lẻ không
+    -có thể mua sỉ không
+    -mua nhiều loại được không
+    -tôi có thể mua nhiều nhất bao nhiêu hộp
+    -tôi có thể mua nhiều nhất bao nhiêu loại pháo hoa
+    -số lượng pháo hoa tối đa có thể mua
+    -mua nhiều nhất được bao nhiêu hộp
+    -mua lượng lớn được không
+    -có khuyến mại không
+    -có ưu đãi cho người mua số lượng lớn không
+    -mua khoảng bao nhiêu sản phẩm thì được giảm giá
+    -mua nhiều pháo có được khuyến mại không
+    -mua nhiều thì có được khuyến mãi gì không
+    -mua số lượng lớn có được giảm giá không
+    -chương trình khuyến mãi
+    -thông tin về các chương trình khuyến mãi
+    -có khuyến mãi cho người mua lần đầu không
+    -có khuyến mãi gì đặc biệt không
+- intent: do_tuoi_su_dung
+  examples: |
+    -độ tuổi bao nhiêu được mua pháo hoa và độ tuổi nào được phép sử dụng
+    -sản phầm này bán cho người từ bao nhiêu tuổi trở lên
+    -độ tuổi được mua pháo hoa
+    -độ tuổi được sử dụng pháo hoa
+    -bao nhiêu tuổi thì được mua pháo hoa
+    -bao nhiêu tuổi thì được sử dụng pháo hoa
+    -độ tuổi quy định được dùng pháo hoa
+    -người bao nhiêu tuổi thì được sử dụng pháo hoa
+    -quy định về độ tuổi được dùng pháo hoa
+    -mấy tuổi được mua pháo hoa
+    -mấy tuổi được đốt pháo hoa
+
+- intent: doi_tra_san_pham
+  examples: |
+    -mua pháo hoa xong có được trả lại hàng không
+    -sản phẩm không đúng ý có được đổi hàng không
+    -mua nhầm có được đổi không
+    -mua nhầm có được trả không
+    -muốn đổi hàng phải làm như thế nào
+    -muốn trả hàng phải làm như thế nào
+    -có thể đổi hàng không
+    -có thể trả hàng không
+    -trả hàng như thế nào
+    -đổi hàng như thế nào
+    -quy định về đổi trả hàng
+- intent: doi_tuong_su_dung
+  examples: |
+    -pháo hoa được sử dụng trong các dịp nào
+    -pháo bán quanh năm hay chỉ mỗi dịp lễ tết
+    -các đối tượng nào được sử dụng pháo hoa
+    -pháo hoa có được bắn quanh năm không
+    -cần những điều kiện gì để đủ quyền mua pháo hoa
+    -đối tượng nào được sử dụng pháo
+    -giao thừa đang đốt có bị công an lên bắt lên phường không
+    -khoảng thời gian nào trong năm được bắn pháo hoa
+    -nên mua pháo vào thời điểm nào thì hợp lý
+    -sau tết có bán pháo hoa không
+    -vì sao pháo hoa được dùng vào dịp tết còn đèn trời thì không
+    -dùng hàng ngày được không
+    -có bán ngoài dịp tết không
+    -dùng khi nào vậy
+- intent: don_vi_san_xuat
+  examples: |
+    -vì sao chỉ có z121 được phép sản xuất pháo hoa mà đơn vị khác không được
+    -ai sản xuất vậy
+    -đơn vị nào sản xuất vậy
+    -cho mình hỏi đơn vị nào sản xuất vậy
+    -có uy tín không vậy
+    -doanh nghiệp nào sản xuất vậy
+- intent: gia_ca_san_pham
+  examples: |
+    -gần tết có ưu đãi giảm giá hay không
+    -pháo hoa giá rẻ nhất
+    -pháo hoa giá đắt nhất
+    -giá pháo hoa sau tết có giảm không
+    -loại pháo hoa rẻ nhất
+    -loại pháo hoa đắt nhất
+    -sau tết mua pháo hoa có được giảm giá không
+    -giá pháo hoa của z121 có rẻ hơn thị trường
+    -pháo hoa của z121 có đắt hơn pháo hoa ngoài thị trường không
+    -giá pháo hoa trước và sau tết có gì khác nhau
+    -giá bao nhiều
+    -pháo hoa ở đây liệu có rẻ nhất
+    -có giá pháo tốt nhất thị trường không
+    -giá pháo hoa năm 2024
+    -giá của  là bao nhiêu
+    -giá của  là bao nhiêu
+    -bán bao nhiêu
+    -bán giá bao nhiêu
+    -pháo bán như nào
+    -pháo bán bao nhiêu
+    -pháo bán giá bao nhiêu
+    -pháo bán như nào
+    -pháo hoa bán như nào
+    -pháo hoa bán bao nhiêu
+    -pháo hoa bán giá bao nhiêu
+    -pháo hoa bán như nào
+    -giá của sản phẩm  là bao nhiêu
+    -sản phẩm nào có giá cao nhất trong danh sách
+    -sản phẩm nào có giá thấp nhất trong danh sách
+    -giá của
+    -giá của giàn phun viên
+    -giá của
+    -giá
+    -giá cả ra sao
+    -giá như nào
+    -bao nhiêu tiền
+    -giá sản phẩm
+    -sản phẩm giá
+    -bán bao nhiêu
+    -giá cả như nào vậy
+- intent: hinh_thuc_bao_quan
+  examples: |
+    -pháo để được trong bao lâu
+    -bảo quản pháo hoa ở đâu để tránh cháy nổ
+    -cách bảo quản pháo hoa như thế nào
+    -cách cất trữ pháo hoa sau khi mua
+    -hộp pháo hoa bị rách, bị ẩm, đốt có làm sao không
+    -làm sao để bảo quản pháo hoa tốt nhất
+    -mua pháo năm nay , sang năm mới dùng có được không
+    -nhiệt độ bảo quản pháo hoa an toàn là bao nhiêu
+    -có thể bảo quản pháo hoa ở đâu
+    -bảo quản pháo hoa thế nào cho đúng
+    -môi trường bảo quản pháo hoa tốt nhất
+    -cách thức bảo quản pháo hoa
+    -hướng dẫn tôi cách để bảo quản pháo hoa
+- intent: hinh_thuc_xu_phat
+  examples: |
+    -mua pháo hoa trên mạng không có hóa đơn có bị xử lý không
+    -các hành vi bị nghiêm cấm liên quan đến pháo hoa
+    -đốt pháo có bị cho đi tù không
+    -đốt pháo ở nơi công cộng; những nơi diễn ra các cuộc họp, những nơi tập trung đông người thì bị xử lý như thế nào
+    -nếu đốt pháo hoa xảy ra sự cố chảy nổ ngoài ý muốn cho hàng xóm thì có phải đền bù thiệt hại hay không
+    -quy định về xử lý hành vi vi phạm trong quản lý, sử pháo hoa
+    -tết có được phép nổ pháo vào nhà hàng xóm không
+    -mua pháo hoa trái phép có bị phạt không
+    -tàng trữ pháo hoa trái phép có bị phạt không
+    -quy định xử phạt khi mua bán pháo hoa trái phép
+    -luật xử phạt với hành vi buôn lậu pháo hoa
+- intent: huong_dan_su_dung
+  examples: |
+    -pháo bộ quốc phòng có mang ra nước ngoài được không
+    -bán kính bao nhiêu là khu vực nguy hiểm khi sử dụng sản phẩm
+    -cách sử dụng giàn phun viên như nào
+    -cách sử dụng như thế nào
+    -cần những điều kiện nào để được sử dụng pháo hoa
+    -cần tránh điều gì khi đốt pháo
+    -có hướng dẫn đốt pháo hoa liên hoàn nhiều loại pháo sao cho đẹp không
+    -đốt pháo có an toàn không
+    -hướng dẫn cách sử dụng
+    -khoảng cách an toàn đứng xem pháo hoa là bao nhiêu
+    -khoảng cách an toàn khi đốt pháo
+    -làm sao để sử dụng pháo không dẫn đến nguy hiểm cho người dùng
+    -lưu ý khi sử dụng pháo hoa trong ngày tết
+    -muốn pháo hoa nổ theo nhạc như trình diễn trên tivi thì làm như thế nào
+    -nên sử dụng pháo hoa ở địa điểm nào
+    -nên sử dụng pháo ở đâu
+    -sử dụng pháo hoa tại nhà cần lưu ý gì
+    -trẻ nhỏ có được mua sản phẩm này không
+    -đốt pháo như thế nào để an toàn cho người sử dụng
+    -để sử dụng pháo hoa, người dùng phải làm những gì
+    -điều kiện để có thể sử dụng pháo hoa
+    -để được đốt pháo hoa, người dùng phải đạt được những điều kiện gì
+    -sử dụng pháo hoa thế nào để an toàn
+    -có thể sử dụng pháo hoa khi người dùng đạt được những điều kiện gì
+    -phải làm gì để có thể sử dụng pháo hoa
+    -đốt pháo hoa cần phải chú ý gì không
+- intent: khai_bao_chinh_quyen
+  examples: |
+    -đốt pháo có bị công an bắt không
+    -đốt pháo ở ngoài đường có bị làm sao không
+    -lúc đốt pháo, nếu bị chính quyền địa phương hỏi thì tôi phải làm gì
+    -mua pháo ở đây có hợp pháp không
+    -nếu khi sử dụng tôi bị đơn vị an ninh bắt thì sao
+    -nếu tôi bị đơn bị an ninh bắt trong quá trình vận chuyển thì sao
+    -đốt pháo hoa của bộ quốc phòng có cần khai báo không
+    -để được sử dụng pháo hoa thì phải khai báo ở đâu
+    -khai báo thế nào để có thể được đốt pháo hoa
+    -báo với ai để được đốt pháo hoa
+    -sử dụng pháo hoa mà không khai báo có bị làm sao không
+- intent: nguy_co_chay_no
+  examples: |
+    -khi sử dụng mà bị cháy nổ gây thiệt hại người và tài sản thì được đền bao nhiêu tiền  và tìm ai để nhận được đền bù
+    -nguy cơ cháy nổ pháo hoa như nào
+    -có nguy cơ cháy nổ hoả hoạn không
+    -đốt pháo hoa làm sao để không gây cháy nhà
+    -pháo hoa có nguy cơ cháy nhà không
+    -sử dụng pháo hoa sao cho không gây cháy nổ
+    -thiệt hại cháy nổ từ pháo hoa lớn thế nào
+    -đốt pháo của bộ quốc phòng có thể bị cháy nổ không
+    -tiềm ẩn nguy cơ cháy nổ từ việc đốt pháo hoa
+    -pháo hoa tầm cao có thể gây cháy nổ dưới thấp không
+- intent: nguyen_lieu_san_pham
+  examples: |
+    -pháo hoa được làm từ những gì
+    -nguyên liệu cấu tạo nên pháo hoa là gì
+    -pháo hoa gồm những gì
+    -pháo gồm những gì
+    -thành phần cấu tạo của pháo hoa
+    -pháo hoa được tạo thành từ những chất gì
+    -các chất có trong pháo hoa
+    -các chất tạo nên pháo hoa
+    -thành phần hóa học của pháo hoa
+    -các nguyên tố hóa học có trong pháo hoa
+    -trong pháo hoa có gì
+- intent: phan_biet_san_pham
+  examples: |
+    -làm sao để phân biệt pháo hoa bộ quốc phòng với các loại pháo hoa khác trên thị trường
+    -làm sao để phân biệt pháo lậu và pháo hợp pháp
+    -làm sao để phân biệt giữa pháo hoa và pháo nổ
+    -phân biệt các loại pháo hoa được phép và không được phép sử dụng
+    -cách phân biệt pháo hoa của bộ quốc phòng
+    -phân biệt pháo hoa của bộ quốc phòng và các loại pháo hoa khác trên thị trường
+    -pháo hoa của bộ quốc phòng khác gì các loại pháo hoa khác
+    -ưu điểm của pháo hoa bộ quốc phòng sản xuất
+    -làm sao để nhận biết pháo hoa của bộ quốc phòng
+- intent: qua_tang_nguoi_than
+  examples: |
+    -pháo hoa có được mua làm quà không
+    -pháo hoa làm quà tặng được không
+    -mua pháo hộ người khác có được không
+    -nếu tôi mua để tặng cho người khác, thì người đó, khi sử dụng pháo có cần lưu ý gì không
+    -mua cho người khác có được không
+    -mua dùm bạn có được không
+    -mua biếu sếp có được không
+    -mua làm quà cho người yêu có được không
+    -mua biếu bố mẹ
+    -mua biếu ông bà
+    -có tặng được không
+    -mua xong có được tặng làm quà không
+- intent: quy_trinh_giao_hang
+  examples: |
+    -tôi mua online thì bao giờ có hàng
+    -bao giờ về hàng
+    -vận chuyển có lâu không
+    -có giao hàng ra nước ngoài không
+    -có giao hàng lên miền núi không
+    -có giao hàng ra biên giới không
+    -tôi ở ngoài đảo, có giao hàng không
+    -khoảng bao lâu thì nhận được hàng
+    -bao lâu mới có thể nhận được hàng
+    -phí vận chuyển khoảng bao nhiêu
+    -có miễn phí vận chuyển không
+- intent: san_pham_tu_che
+  examples: |
+    -không mua được pháo hoa thì có thể tự chế pháo hoa ở nhà hay không
+    -chế pháo nổ có được không
+    -chế pháo hoa nổ có được không
+    -tự chế pháo hoa thì làm sao
+    -tự chế pháo thì làm sao
+    -cách nào để tự chế pháo hoa
+    -hướng dẫn tự chế pháo hoa
+    -cách tự chế pháo hoa chơi tết
+    -có cách nào tự chế pháo hoa không
+    -tự làm pháo hoa thế nào
+    -cách tự làm ra một quả pháo hoa
+    -làm pháo hoa tại nhà thế nào
+- intent: so_luong_mua_ban
+  examples: |
+    -số lượng mua tối đa là bao nhiêu
+    -tối đa mua được bao nhiêu pháo hoa
+    -tối đa mua được bao nhiêu pháo
+    -mua nhiều đó được không
+    -mua nhiều nhất bao nhiêu quả pháo hoa
+    -có giới hạn số lượng mua không
+    -mua sỉ có giới hạn không
+    -số lượng lớn nhất có thể mua là bao nhiêu
+    -mua nhiều pháo hoa có được không
+    -muốn mua nhiều pháo hoa thì phải làm sao
+    -mua pháo hoa số lượng lớn thế nào
+- intent: so_sanh_san_pham
+  examples: |
+    -có đỡ khói hơn giàn phun viên không
+    -khác gì giàn phun nhấp nháy
+    -pháo hoa nào đốt là an toàn nhất
+    -có sự khác biệt giữa giá của  và  không
+    -sản phẩm có điều đặc biệt nào không
+    -so sánh giá
+    -sự khác biệt giữa  và  là gì
+- intent: thong_tin_doi_tra
+  examples: |
+    -mua pháo hoa đểu có được đổi trả không
+    -mua pháo có được hoàn trả không
+    -nếu pháo hoa sử dụng được có được đổi trả sản phẩm không
+    -nhận pháo, hộp bị rách có được đổi mới không
+    -mua pháo hoa xong có được trả hàng không
+    -thủ tục trả hàng thế nào
+    -làm cách nào để trả hàng đã mua
+    -cách để trả hàng đã mua
+    -muốn trả pháo hoa đã mua thì phải làm thế nào
+    -đổi pháo hoa sang loại khác có được không
+    -tôi cần đổi pháo hoa đã mua
+    -tôi cần trả pháo hoa đã mua
+- intent: thoi_gian_phao_no
+  examples: |
+    -bắn trong bao lâu
+    -bắn được lâu không
+    -bắn được mấy phút
+    -loại nào bắn được 15 phút
+    -loại nào bắn được 15 phút không
+    -có loại nào bắn được lâu không
+    -loại nào bắn lâu nhất
+    -pháo hoa nào bắn lâu nhất
+    -pháo nào bắn lâu nhất
+    -loại pháo hoa nào bắn lâu nhất
+    -giàn phun viên bắn được bao lâu
+
+- intent: am_thanh_no_phao
+  examples: |
+    -pháo nào nổ to nhất
+    -pháo nổ có to không
+    -nổ có to không
+    -nổ có điếc tai khai
+    -âm thanh có lớn không
+    -pháo nổ âm thanh có lớn không
+- intent: khoi_san_pham
+  examples: |
+    -pháo hoa bắn đã ít khói hơn chưa
+    -có nhiều khói không
+    -bắn có khỏi không
+    -bắn lên có khối không
+    -có khói không vậy
+    -đã ít khói hơn chưa
+    -có đỡ khói hơn không
+    -loại nào ít khói nhất
+    -loại nào không có khói
+    -loại nào khói nhiều
+- intent: han_su_dung_phao
+  examples: |
+    -pháo hoa có hạn sử dụng không
+    -có hạn sử dụng không
+    -hạn sử dụng là bao lâu
+    -hạn sử dụng đến khi nào vậy
+    -bao bì có ghi hạn sử dụng không
+    -trên bao bì có hạn sử dụng không
+- intent: thong_tin_san_pham
+  examples: |
+    -có thông tin sản phẩm không
+    -cho mình thông tin về sản phẩm
+    -mình muốn biết thêm về sản phẩm này
+    -mình muốn biết thêm thôn tin
+    -thông tin sản phẩm
+    -biết thêm về sản phẩm
+- intent: thong_tin_van_chuyen
+  examples: |
+    -bên bạn có hỗ trợ vận chuyển không nếu có thì chính sách vận chuyển như thế nào
+    -có vận chuyển pháo ra nước ngoài được không
+    -đặt pháo hoa vận chuyển mất bao lâu
+    -khoảng bao lâu từ khi đặt hàng thì nhận được sản phẩm
+    -mua nhiều có được giảm giá hoặc freeship không
+    -nhận hàng có được kiểm tra hàng không
+    -phí ship khoảng bao nhiêu
+    -mua nhiều có miễn phí ship không
+    -vận chuyển pháo hoa ra nước ngoài có được không
+    -chính sách vận chuyển của cửa hàng thế nào
+    -thời gian vận chuyển khoảng bao lâu
+    -vận chuyển pháo hoa ra ngoài hải đảo không
+
+- intent: thu_tuc_kinh_doanh
+  examples: |
+    -có được mua số lượng lớn để bán lẻ không
+    -được phép mua số lượng lớn pháo hoa ở z121 rồi bán kiếm lời không
+    -muốn làm đại lý bán pháo hoa thì làm thế nào"
+    -muốn làm đại lý thì phải làm sao
+    -thủ tục cấp giấy phép kinh doanh pháo hoa
+    -tôi muốn đăng ký làm đại lý bán pháo hoa
+    -muốn bán pháo hoa thì phải làm những gì
+    -thủ tục đăng ký bán pháo hoa
+    -tôi muốn trở thành đối tác bán pháo hoa
+    -cấp phép bán pháo hoa ở đâu
+    -làm giấy phép để trở thành đại lý bán pháo hoa thế nào
+    -cần phải làm gì để mở cửa hàng bán pháo hoa
+- intent: khong_lien_quan
+  examples: |
+    -mua hạt điều ở đâu
+    -cây rút tiền
+    -chơi cở vua
+    -đá bóng
+    -đánh nhau
+    -chăm bé
+    -mua sữa hạt
+    -đi du lịch
+    -đi học
+    -đi chợ
+    -đi làm
+    -lấu thịt chiên giòn
+    -làm bánh
+    -mua điện thoại
+    -ôn thi tiếng anh
+    -xem phem
+    -lợi ích của việc ôm nhau
+    -tổ chức đám cưới
+    -xem buổi hoà nhạc
+    -phim cổ trang
+    -làm chân gà xả ớt
+    -hoa hậu hoà bình
+    -pam yêu ơi
+    -xe ô tô
+    -livestream
+    -hết tiền
+    -bạn trai
+    -bắt cóc
+    -quán cà phê
+    -phim hàn
+    -phim khiên người xem khóc hết nước mắt
+    -chị đẹp đạp gió rẽ sóng
+    -tân sinh viên tiêu hết bao nhiêu tiền
+    -mua rong biển ăn vặt ở đâu
+    -thịt mèo mua ở đâu
+    -cách chế biến thịt chó
+    -những nghề nghiệp độc lạ
+    -cách làm người yêu hết giận
+    -hót gơ hà thành
+    -tiệm bánh gato ngol
+    -nơi bán áo dài tết
+    -phẫu thuật thẩm mỹ ở đâu
+    -food tour chùa láng
+    -đề thi đại học 2021
+    -chụp ảnh cưới ở đâu
+    -năm nay là năm con gì
+    -mua kính ở đâu
+    -phát người yêu ở đâu
+- intent: mua_toi_da_bn
+  examples: |
+    -được mua bao nhiêu
+    -mua tối đa bao nhiêu
+    -mua nhiều được không
+    -có được mua nhiều không
+    -mua số lượng lớn được không
+    -mua sll được không
+    -mua sll
+    -tối đa
+    -mua nhiều
+- intent: check_price
+  examples: |
+    - bao nhiêu tiền
+    - giá bao nhiêu
+    - giá
+    - xin giá
+    - nhiêu tiền
+    - bao nhiêu
+    - bao tiền
+    - [giàn phun viên](name) giá bao nhiêu?
+    - [giàn phun hoa](name) giá bao nhiêu?
+    - sản phẩm [giàn phun hoa](name) bao nhiêu tiền?
+    - giá [Giàn Phun Viên](name)
+    - giá [Giàn Phun hoa](name)
+- lookup: name
+  examples: |
+    - giàn phun hoa
+    - giàn phun viên
+    - giàn phun viên nhấp nháy
+    - con sò đổi màu
+    - thác nước bạc
+    - cánh xoay hoa

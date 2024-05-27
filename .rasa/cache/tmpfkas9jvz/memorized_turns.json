@@ -1,0 +1,17 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohOTE5Pic/MTO+ICMxPz4jP7G2NhYAT5YgNw==": "action_search_product",
+    "eJyNjMEJwCAMAFfJAJ3AVUoJIQ0o2ESi9iPuXqEdoL87OG4fc4NRXG4kbsk0wHgBlS4J8ElOtYmutlfx1SRd2gIwMWajhCWSYTSa/35VyDlicTs7t1/f4wEysEIE": "action_listen",
+    "eJytjkEKQjEMRK/SA3iCXkUkjDHQwLcpbeqm9O4GdSu4cDPMwOMx57VPabUuDwK7Ws1pvQtV3CWnzzh0uNRg55AejNaYnhOD6TAotQKjYti/+Yagc6HW7TbZ/+f99vPluiLoojIj4XtfnlzVYXg=": "utter_loai_ban_nhieu_nhat",
+    "eJytjkEKAjEMRa/SA3iCXkWGEGOggbEpaTqbMnc3qEtlZuHmkw8vj3+d+yXNZrwBkovWnOb7gIoPzulTVunONdjR2YKRGtVzIiRYFQVaQYWiuJ/zdUajAs30Psj/5/218+W6YdBFeESiHxmHOxt8ezxnX57Q94XK": "action_listen",
+    "eJytjsEJxDAMBFtxAanArYQghCKwIScZWc7HuPeYu/sG8shvB4Zh1z6W0IvxCUieVWLovwGCH47hD0euzjLdVtmmk2Wix0BIcChmKAkVkuJ41quMRgmK6d7I3+ve/fy2ZKaMQRL6GNsFOnlgQw==": "utter_loai_nao_re_nhat",
+    "eJytzsEJwzAMBdBVPEAn8CqlCKEKbEglI8u9GO9ek/QWQnLITR/+f+jZxyP0YvwFJM8qMfTtAMEPx/APS67OMrutss1Olhk9BkKCRTFDSaiQFMc1rzIaJSim70Z+n3v052rJpIxBEvoZ19zZYLe64L5+JqaCKw==": "action_listen",
+    "eJytjkEKwzAMBL/iB/QF/koIYpEFNqSSsZVcjP9e0/Za6CG3HRiG3cZ8hFGbXAT2YhrD+AxSPCWGLxylu+hyzy5tOUUXegwMpsNQqGYYZcP8r9cFjTPVZulkv6/76+e7pSuV4KQZPuf+ApqtYKU=": "utter_loai_nao_dat_nhat",
+    "eJytzsEJwzAMBdBVPEAn8ColCKEIbEgkI8u5mOxe0+YWQnLoTR/+f+jd91foxXgDJM8qMfTfAYIrx3CEJVdnGd1W2UYny4geAyHBopihJFRIivszrzIaJSimcyP/n3v159eSQc3oIAn9zmvubHCePZGnD64wg1E=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohOSM1OTu+oCgzObW2NhYAlcMd3g==": "action_check_price",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohOSM1OTu+oCgzObWWOJOQdeA3LhYAc6g77A==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohOSM1OTu+oCgzObWWOJOQdVDBOFwOK8lIzMuuzC+trY0FANYXVxw=": "utter_thankyou",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohOSM1OTu+oCgzObWWOJOQdVDBOFwOK8lIzMuuzC8lZExpSUlqUTxcNR5zYgE+OnLm": "action_listen"
+  }
+}

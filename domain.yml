@@ -1,0 +1,224 @@
+version: "3.1"
+
+intents:
+  - greet
+  - loai_ban_nhieu_nhat
+  - loai_nao_dep_nhat
+  - loai_nao_re_nhat
+  - loai_nao_dat_nhat
+  - dong_y
+  - goodbye
+  - ask_ability
+  - thankyou
+  - praise
+  - tu_choi
+  - decry
+  - howto
+  - dia_chi_cua_hang
+  - anh_huong_co_the
+  - anh_huong_tre_nho
+  - bao_bi_san_pham
+  - bao_dam_an_toan
+  - cac_loai_phao_hoa
+  - chinh_sach_mua_ban
+  - do_tuoi_su_dung
+  - doi_tra_san_pham
+  - doi_tuong_su_dung
+  - don_vi_san_xuat
+  - gia_ca_san_pham
+  - hinh_thuc_bao_quan
+  - hinh_thuc_xu_phat
+  - huong_dan_su_dung
+  - khai_bao_chinh_quyen
+  - nguy_co_chay_no
+  - nguyen_lieu_san_pham
+  - phan_biet_san_pham
+  - qua_tang_nguoi_than
+  - quy_trinh_giao_hang
+  - san_pham_tu_che
+  - so_luong_mua_ban
+  - so_sanh_san_pham
+  - thong_tin_doi_tra
+  - thoi_gian_phao_no
+  - am_thanh_no_phao
+  - khoi_san_pham
+  - han_su_dung_phao
+  - thong_tin_san_pham
+  - thong_tin_van_chuyen
+  - thu_tuc_kinh_doanh
+  - khong_lien_quan
+  - mua_toi_da_bn
+  - nlu_fallback
+  - bot_challenge
+  - check_price
+
+entities:
+  - name
+
+slots:
+  name:
+    type: text
+    influence_conversation: True
+    mappings:
+    - type: from_entity
+      entity: name
+
+
+responses:
+  utter_greet:
+  - text: "Xin chào! Tôi có thể giúp gì được cho bạn?"
+
+  utter_loai_ban_nhieu_nhat:
+  - text: "Theo thông tin của chúng tôi, loại Giàn Phun Viên là loại bán nhiều nhất có giá là 1 Jack."
+
+  utter_loai_nao_dep_nhat:
+  - text: "Khách hàng thường đánh giá cao [Loại sản phẩm] vì sự đa dạng và chất lượng của nó."
+
+  utter_loai_nao_re_nhat:
+  - text: "Loại [Loại sản phẩm] có giá cả phải chăng nhất trong danh mục của chúng tôi."
+
+  utter_loai_nao_dat_nhat:
+  - text: "Loại [Loại sản phẩm] được đánh giá cao về mặt chất lượng và hiệu quả sử dụng."
+
+  utter_dong_y:
+  - text: "Tôi đồng ý với quan điểm của bạn."
+
+  utter_goodbye:
+  - text: "Tạm biệt! Hãy cho tôi biết nếu bạn cần thêm sự trợ giúp."
+
+  utter_ask_ability:
+  - text: "Bạn muốn tôi giúp với điều gì?"
+
+  utter_thankyou:
+  - text: "Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi!"
+  - text: "Rất vui khi được giúp đỡ bạn."
+
+  utter_praise:
+  - text: "Cảm ơn bạn đã đánh giá cao sản phẩm của chúng tôi!"
+
+  utter_tu_choi:
+  - text: "Rất tiếc vì sự bất tiện này. Hãy cho tôi biết nếu có gì tôi có thể giúp đỡ bạn."
+
+  utter_decry:
+  - text: "Chúng tôi xin lỗi về sự không hài lòng của bạn. Hãy để chúng tôi biết nếu có gì chúng tôi có thể cải thiện."
+
+  utter_fallback:
+  - text: "Tôi chưa rõ câu hỏi của bạn!!!"
+
+  utter_howto:
+  - text: "Bạn có thể hỏi tôi về cách sử dụng sản phẩm hoặc các hướng dẫn khác bạn cần."
+
+  utter_dia_chi_cua_hang:
+  - text: "Địa chỉ của cửa hàng của chúng tôi là [Địa chỉ cửa hàng]."
+
+  utter_anh_huong_co_the:
+  - text: "Sản phẩm này có thể ảnh hưởng đến sức khỏe của bạn nếu không sử dụng đúng cách."
+
+  utter_anh_huong_tre_nho:
+  - text: "Đối với trẻ nhỏ, sử dụng sản phẩm này cần được giám sát cẩn thận."
+
+  utter_bao_bi_san_pham:
+  - text: "Bao bì của sản phẩm được thiết kế để đảm bảo sự an toàn và bảo quản tốt nhất."
+
+  utter_bao_dam_an_toan:
+  - text: "Chúng tôi cam kết đảm bảo an toàn tuyệt đối cho tất cả các sản phẩm của chúng tôi."
+
+  utter_cac_loai_phao_hoa:
+  - text: "Chúng tôi cung cấp một loạt các loại pháo hoa phong phú và đa dạng."
+
+  utter_chinh_sach_mua_ban:
+  - text: "Xin vui lòng tham khảo chính sách mua bán của chúng tôi trên trang web hoặc liên hệ với bộ phận hỗ trợ."
+
+  utter_do_tuoi_su_dung:
+  - text: "Vui lòng đọc kỹ thông tin về độ tuổi sử dụng của sản phẩm trước khi sử dụng."
+
+  utter_doi_tra_san_pham:
+  - text: "Chúng tôi chấp nhận đổi trả sản phẩm trong vòng [số ngày] ngày kể từ ngày mua hàng."
+
+  utter_doi_tuong_su_dung:
+  - text: "Sản phẩm này được thiết kế để phục vụ cho [đối tượng sử dụng]."
+
+  utter_don_vi_san_xuat:
+  - text: "Sản phẩm được sản xuất bởi [Tên công ty sản xuất]."
+
+  utter_gia_ca_san_pham:
+  - text: "Giá của sản phẩm này là [Giá]. Vui lòng liên hệ với chúng tôi để biết thêm thông tin chi tiết."
+
+  utter_hinh_thuc_bao_quan:
+  - text: "Để bảo quản sản phẩm, bạn nên [hình thức bảo quản]."
+
+  utter_hinh_thuc_xu_phat:
+  - text: "Theo luật pháp, vi phạm hành chính về [hình thức vi phạm] có thể bị xử phạt [mức phạt]."
+
+  utter_huong_dan_su_dung:
+  - text: "Hãy đọc kỹ hướng dẫn sử dụng trước khi sử dụng sản phẩm."
+
+  utter_khai_bao_chinh_quyen:
+  - text: "Sản phẩm này đã được khai báo cho cơ quan chức năng theo quy định."
+
+  utter_nguy_co_chay_no:
+  - text: "Cần chú ý đến nguy cơ cháy nổ khi sử dụng sản phẩm này."
+
+  utter_nguyen_lieu_san_pham:
+  - text: "Sản phẩm được làm từ [nguyên liệu chính]."
+
+  utter_phan_biet_san_pham:
+  - text: "Sản phẩm này có điểm khác biệt là [điểm khác biệt]."
+
+  utter_qua_tang_nguoi_than:
+  - text: "Đây sẽ là một món quà ý nghĩa cho người thân của bạn."
+
+  utter_quy_trinh_giao_hang:
+  - text: "Chúng tôi có một quy trình giao hàng nhanh chóng và đáng tin cậy."
+
+  utter_san_pham_tu_che:
+  - text: "Chúng tôi cung cấp dịch vụ sản phẩm từ chế biến theo yêu cầu."
+
+  utter_so_luong_mua_ban:
+  - text: "Khách hàng có thể mua số lượng tối đa là [số lượng] sản phẩm mỗi lần đặt hàng."
+
+  utter_so_sanh_san_pham:
+  - text: "Bạn có thể so sánh các sản phẩm khác nhau để chọn lựa sản phẩm phù hợp nhất."
+
+  utter_thong_tin_doi_tra:
+  - text: "Thông tin về chính sách đổi trả sản phẩm có sẵn trên trang web của chúng tôi hoặc bạn có thể liên hệ với chúng tôi để biết thêm chi tiết."
+
+  utter_thoi_gian_phao_no:
+  - text: "Thời gian pháo nổ của sản phẩm là khoảng [thời gian]."
+
+  utter_am_thanh_no_phao:
+  - text: "Âm thanh phát ra từ pháo hoa là [âm thanh]."
+
+  utter_khoi_san_pham:
+  - text: "Sản phẩm này có thể tạo ra một lượng khói [mức độ khói]."
+
+  utter_han_su_dung_phao:
+  - text: "Hạn sử dụng của sản phẩm là [thời gian]."
+
+  utter_thong_tin_san_pham:
+  - text: "Thông tin chi tiết về sản phẩm có sẵn trên trang web của chúng tôi hoặc bạn có thể liên hệ trực tiếp để biết thêm."
+
+  utter_thong_tin_van_chuyen:
+  - text: "Thông tin vận chuyển và giao nhận có thể được tìm thấy trên trang web của chúng tôi hoặc bạn có thể liên hệ với bộ phận hỗ trợ."
+
+  utter_thu_tuc_kinh_doanh:
+  - text: "Thông tin về thủ tục kinh doanh có sẵn trên trang web của chúng tôi hoặc bạn có thể liên hệ với chúng tôi để biết thêm."
+
+  utter_khong_lien_quan:
+  - text: "Rất tiếc, nhưng tôi không hiểu hoàn toàn yêu cầu của bạn. Bạn có thể thử lại hoặc hỏi câu hỏi khác không?"
+
+  utter_mua_toi_da_bn:
+  - text: "Khách hàng có thể mua tối đa là [số lượng] sản phẩm mỗi lần đặt hàng."
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+
+actions:
+  - action_search_product
+  - action_check_price
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

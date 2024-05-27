@@ -1,0 +1,37 @@
+version: "3.0"
+
+intents:
+  - greet
+  - ask_price
+  - goodbye
+  - bot_challenge
+
+entities:
+  - product
+
+slots:
+  product:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: product
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I help you today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a nice day."
+
+  utter_price:
+    - text: "The price of {product} is {price}$."
+
+  utter_iamabot:
+    - text: "I am bot"
+
+actions:
+  - action_check_price
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

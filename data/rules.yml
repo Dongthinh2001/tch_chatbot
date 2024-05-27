@@ -1,0 +1,27 @@
+version: "3.1"
+
+rules:
+  - rule: fallback
+    steps:
+      - intent: nlu_fallback
+      - action: utter_fallback
+  - rule: decry
+    steps:
+      - intent: decry
+      - action: utter_decry
+  - rule: greet
+    steps:
+      - intent: greet
+      - action: utter_greet
+  - rule: thankyou
+    steps:
+      - intent: thankyou
+      - action: utter_thankyou
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+    - intent: goodbye
+    - action: utter_goodbye
+  - rule: Say 'I am a bot' anytime the user challenges
+    steps:
+    - intent: bot_challenge
+    - action: utter_iamabot

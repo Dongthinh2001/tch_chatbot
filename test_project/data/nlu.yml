@@ -1,0 +1,29 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+    - good morning
+    - good evening
+    - hey there
+
+- intent: ask_price
+  examples: |
+    - How much does the firework cost?
+    - What is the price of the firework?
+    - Tell me the price of firework
+    - How much is the firework?
+    - What is the price of [pháo phun viên](product)?
+    - How much is [pháo phun hoa](product)?
+    - What is the cost of [pháo sáng đặc biệt](product)?
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - talk to you later
+    - have a nice day

@@ -1,0 +1,6 @@
+[
+  {
+    "name": "name",
+    "pattern": "(\\bgiàn\\ phun\\ hoa\\b|\\bgiàn\\ phun\\ viên\\b|\\bgiàn\\ phun\\ viên\\ nhấp\\ nháy\\b|\\bcon\\ sò\\ đổi\\ màu\\b|\\bthác\\ nước\\ bạc\\b|\\bcánh\\ xoay\\ hoa\\b)"
+  }
+]

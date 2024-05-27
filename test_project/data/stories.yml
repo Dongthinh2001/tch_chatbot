@@ -1,0 +1,19 @@
+version: "3.0"
+
+stories:
+- story: greet and ask price
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_price
+    entities:
+      - product: "pháo phun viên"
+  - action: action_check_price
+  - slot_was_set:
+    - product: "pháo phun viên"
+  - action: utter_price
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
